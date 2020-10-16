@@ -1,0 +1,60 @@
+.todo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  width: calc(100vw - 50px);
+  height: calc(100vh - 70px);
+  transform: translate(-50%, -50%);
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  box-shadow: 2px 3px 20px #f4f6f8;
+}
+.todo__sidebar {
+  width: 250px;
+  height: 100%;
+  padding: 50px 20px;
+  border-right: 1px solid #e5e5e5;
+  background: #f1f1f1;
+}
+.todo__tasks{
+  flex: 1;
+  padding: 60px; 
+  overflow: auto;
+}
+
+.input_field {
+  width: 100%;
+  height: 32px;
+  padding-left: 10px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  transition: all 0.1s linear;
+
+  &::placeholder {
+    color: #bbbbbb;
+  }
+  &:focus {
+    border-color: #cccccc;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+}
+
+.main-btn {  
+  padding: 8px 16px;
+  color: #ffffff;
+  background: #4dd599;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s linear;
+
+  &:hover{
+    background: #36c285;
+  }
+}
+.main-btn.disabled {  
+  background: rgb(122, 122, 122);
+}

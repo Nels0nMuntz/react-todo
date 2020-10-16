@@ -1,0 +1,52 @@
+.todo__list{
+    margin-bottom: 25px;
+}
+.sidebar__item {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    cursor: pointer;
+
+    & span{
+        flex: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 160px;
+        white-space: nowrap;
+    }
+
+    &:hover {
+        background: rgba(255,255,255,0.7);
+    }
+
+    &:hover .sidebar__remove{
+        opacity: 1;
+    }
+}
+.active {
+    background: #ffffff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+.item__icon i {
+    display: inline-flex;
+    margin-right: 10px;
+}
+.badge{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.badge__green{
+    background: #42B883;
+}
+.textGray{
+    color: #767676;
+    transition: color 0.1s linear;
+    &:hover{
+        color: initial;
+    }
+}
+.sidebar__remove{
+    opacity: 0;
+}
